@@ -43,10 +43,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblpname = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.lbldoctor = new System.Windows.Forms.Label();
             this.lblpatient = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblpname = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +85,7 @@
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(288, 33);
             this.date.TabIndex = 24;
-            this.date.Value = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
+            this.date.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // rtextdescription
             // 
@@ -241,6 +241,28 @@
             this.panel2.Size = new System.Drawing.Size(702, 532);
             this.panel2.TabIndex = 33;
             // 
+            // lblpname
+            // 
+            this.lblpname.AutoSize = true;
+            this.lblpname.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lblpname.ForeColor = System.Drawing.Color.Blue;
+            this.lblpname.Location = new System.Drawing.Point(373, 145);
+            this.lblpname.Name = "lblpname";
+            this.lblpname.Size = new System.Drawing.Size(66, 22);
+            this.lblpname.TabIndex = 32;
+            this.lblpname.Text = "Name";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(368, 108);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 23);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Patient Name";
+            // 
             // lbldoctor
             // 
             this.lbldoctor.AutoSize = true;
@@ -262,28 +284,6 @@
             this.lblpatient.Size = new System.Drawing.Size(66, 22);
             this.lblpatient.TabIndex = 29;
             this.lblpatient.Text = "Name";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(368, 108);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 23);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Patient Name";
-            // 
-            // lblpname
-            // 
-            this.lblpname.AutoSize = true;
-            this.lblpname.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.lblpname.ForeColor = System.Drawing.Color.Blue;
-            this.lblpname.Location = new System.Drawing.Point(373, 145);
-            this.lblpname.Name = "lblpname";
-            this.lblpname.Size = new System.Drawing.Size(66, 22);
-            this.lblpname.TabIndex = 32;
-            this.lblpname.Text = "Name";
             // 
             // edit_appoinment
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.exit = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.register = new System.Windows.Forms.Label();
             this.btnlogin = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,7 +56,7 @@
             // 
             this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exit.Image = ((System.Drawing.Image)(resources.GetObject("exit.Image")));
-            this.exit.Location = new System.Drawing.Point(491, 12);
+            this.exit.Location = new System.Drawing.Point(526, 12);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(37, 39);
             this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -66,7 +68,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(126, 17);
+            this.label1.Location = new System.Drawing.Point(130, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(311, 34);
             this.label1.TabIndex = 4;
@@ -89,7 +91,7 @@
             this.panel1.Controls.Add(this.btnlogin);
             this.panel1.Location = new System.Drawing.Point(21, 72);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(507, 439);
+            this.panel1.Size = new System.Drawing.Size(542, 439);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -100,7 +102,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(377, 385);
+            this.button4.Location = new System.Drawing.Point(422, 387);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(96, 39);
             this.button4.TabIndex = 21;
@@ -227,12 +229,13 @@
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.loginBtn_Click);
             // 
+          
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(565, 528);
+            this.ClientSize = new System.Drawing.Size(585, 528);
             this.ControlBox = false;
             this.Controls.Add(this.exit);
             this.Controls.Add(this.label1);
@@ -244,6 +247,7 @@
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            
             this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -272,6 +276,7 @@
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

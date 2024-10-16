@@ -116,7 +116,7 @@
             this.todate.Name = "todate";
             this.todate.Size = new System.Drawing.Size(358, 33);
             this.todate.TabIndex = 41;
-            this.todate.Value = new System.DateTime(2024, 9, 26, 0, 0, 0, 0);
+            this.todate.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // label1
             // 

@@ -40,6 +40,8 @@
             this.panelsidebar = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.picboxlogo = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.paneltop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxminimize)).BeginInit();
@@ -130,7 +132,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(54, 253);
+            this.button3.Location = new System.Drawing.Point(54, 222);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(122, 51);
             this.button3.TabIndex = 23;
@@ -190,12 +192,34 @@
             this.picboxlogo.TabIndex = 35;
             this.picboxlogo.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(259, 222);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(887, 340);
+            this.label2.TabIndex = 22;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(556, 132);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(221, 33);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Health Policy";
+            // 
             // policy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 738);
             this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.paneltop);
             this.Controls.Add(this.panelsidebar);
             this.Name = "policy";
@@ -209,6 +233,7 @@
             this.panelsidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -225,5 +250,7 @@
         private System.Windows.Forms.PictureBox picboxlogo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

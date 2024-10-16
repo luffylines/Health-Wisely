@@ -42,13 +42,13 @@
             // date
             // 
             this.date.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(22, 151);
+            this.date.Location = new System.Drawing.Point(22, 150);
             this.date.MaxDate = new System.DateTime(2025, 8, 20, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(307, 33);
             this.date.TabIndex = 24;
-            this.date.Value = new System.DateTime(2024, 9, 16, 0, 0, 0, 0);
+            this.date.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // btndischarge
             // 

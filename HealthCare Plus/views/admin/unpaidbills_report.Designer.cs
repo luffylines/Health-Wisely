@@ -116,7 +116,7 @@
             this.todate.Name = "todate";
             this.todate.Size = new System.Drawing.Size(309, 33);
             this.todate.TabIndex = 41;
-            this.todate.Value = new System.DateTime(2024, 9, 16, 0, 0, 0, 0);
+            this.todate.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // label1
             // 
@@ -139,7 +139,7 @@
             this.fromdate.Name = "fromdate";
             this.fromdate.Size = new System.Drawing.Size(306, 33);
             this.fromdate.TabIndex = 39;
-            this.fromdate.Value = new System.DateTime(2024, 9, 16, 0, 0, 0, 0);
+            this.fromdate.Value = new System.DateTime(2024, 6, 1, 0, 0, 0, 0);
             // 
             // btnexportpdf
             // 

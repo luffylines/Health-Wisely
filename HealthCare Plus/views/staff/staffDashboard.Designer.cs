@@ -53,25 +53,26 @@
             // 
             // paneltop
             // 
-            this.paneltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.paneltop.Controls.Add(this.picboxminimize);
-            this.paneltop.Controls.Add(this.picboxclose);
+            this.paneltop.BackColor = System.Drawing.Color.White;
             this.paneltop.Controls.Add(this.picboxlogout);
             this.paneltop.Controls.Add(this.lblstaffdashboard);
+            this.paneltop.Controls.Add(this.picboxminimize);
+            this.paneltop.Controls.Add(this.picboxclose);
             this.paneltop.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneltop.Location = new System.Drawing.Point(234, 0);
             this.paneltop.Name = "paneltop";
             this.paneltop.Size = new System.Drawing.Size(911, 69);
             this.paneltop.TabIndex = 4;
+            this.paneltop.Paint += new System.Windows.Forms.PaintEventHandler(this.paneltop_Paint);
             // 
             // picboxminimize
             // 
             this.picboxminimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picboxminimize.Image = ((System.Drawing.Image)(resources.GetObject("picboxminimize.Image")));
-            this.picboxminimize.Location = new System.Drawing.Point(785, 11);
+            this.picboxminimize.Location = new System.Drawing.Point(778, 13);
             this.picboxminimize.Name = "picboxminimize";
-            this.picboxminimize.Size = new System.Drawing.Size(37, 39);
-            this.picboxminimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxminimize.Size = new System.Drawing.Size(44, 41);
+            this.picboxminimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxminimize.TabIndex = 40;
             this.picboxminimize.TabStop = false;
             this.picboxminimize.Click += new System.EventHandler(this.picboxminimize_Click_1);
@@ -80,9 +81,9 @@
             // 
             this.picboxclose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picboxclose.Image = ((System.Drawing.Image)(resources.GetObject("picboxclose.Image")));
-            this.picboxclose.Location = new System.Drawing.Point(869, 13);
+            this.picboxclose.Location = new System.Drawing.Point(864, 13);
             this.picboxclose.Name = "picboxclose";
-            this.picboxclose.Size = new System.Drawing.Size(37, 39);
+            this.picboxclose.Size = new System.Drawing.Size(47, 41);
             this.picboxclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picboxclose.TabIndex = 34;
             this.picboxclose.TabStop = false;
@@ -95,7 +96,7 @@
             this.picboxlogout.Location = new System.Drawing.Point(828, 16);
             this.picboxlogout.Name = "picboxlogout";
             this.picboxlogout.Size = new System.Drawing.Size(35, 34);
-            this.picboxlogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxlogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxlogout.TabIndex = 30;
             this.picboxlogout.TabStop = false;
             this.picboxlogout.Click += new System.EventHandler(this.picboxlogout_Click);
@@ -105,7 +106,7 @@
             this.lblstaffdashboard.AutoSize = true;
             this.lblstaffdashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblstaffdashboard.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
-            this.lblstaffdashboard.ForeColor = System.Drawing.Color.White;
+            this.lblstaffdashboard.ForeColor = System.Drawing.Color.Black;
             this.lblstaffdashboard.Location = new System.Drawing.Point(272, 16);
             this.lblstaffdashboard.Name = "lblstaffdashboard";
             this.lblstaffdashboard.Size = new System.Drawing.Size(261, 38);
@@ -235,6 +236,7 @@
             this.panelcontent.Name = "panelcontent";
             this.panelcontent.Size = new System.Drawing.Size(900, 742);
             this.panelcontent.TabIndex = 5;
+            this.panelcontent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcontent_Paint);
             // 
             // staffDashboard
             // 

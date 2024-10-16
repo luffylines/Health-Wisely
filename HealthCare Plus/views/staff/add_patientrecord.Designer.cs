@@ -64,9 +64,9 @@
             this.date.MaxDate = new System.DateTime(2025, 8, 20, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(288, 33);
+            this.date.Size = new System.Drawing.Size(302, 33);
             this.date.TabIndex = 24;
-            this.date.Value = new System.DateTime(2024, 9, 16, 0, 0, 0, 0);
+            this.date.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // txtrecord
             // 
@@ -98,7 +98,7 @@
             this.txtrecordname.Multiline = false;
             this.txtrecordname.Name = "txtrecordname";
             this.txtrecordname.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtrecordname.Size = new System.Drawing.Size(288, 33);
+            this.txtrecordname.Size = new System.Drawing.Size(302, 33);
             this.txtrecordname.TabIndex = 19;
             this.txtrecordname.Text = "";
             // 

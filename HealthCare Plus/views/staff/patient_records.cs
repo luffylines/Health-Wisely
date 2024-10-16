@@ -46,6 +46,8 @@ namespace HealthCare_Plus.views.staff
                     adapter.Fill(dataTable);
 
                     patientrecordsgrid.DataSource = dataTable;
+                    patientrecordsgrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
                 }
             }
         }
@@ -70,6 +72,8 @@ namespace HealthCare_Plus.views.staff
                     adapter.Fill(dataTable);
 
                     patientrecordsgrid.DataSource = dataTable;
+                    patientrecordsgrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
                 }
             }
         }

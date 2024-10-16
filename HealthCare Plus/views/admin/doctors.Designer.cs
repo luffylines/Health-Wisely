@@ -28,19 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnadddoctor = new System.Windows.Forms.Button();
             this.doctorgridview = new System.Windows.Forms.DataGridView();
-            this.doctorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.doctorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.doctorAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.specializedArea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.location = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qualifications = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.txtsearch = new System.Windows.Forms.TextBox();
@@ -71,97 +63,36 @@
             this.doctorgridview.BackgroundColor = System.Drawing.Color.White;
             this.doctorgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.doctorgridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.doctorgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.doctorgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.doctorgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.doctorgridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.doctorId,
-            this.doctorName,
-            this.doctorAge,
-            this.specializedArea,
-            this.location,
-            this.phone,
-            this.email,
-            this.qualifications});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.doctorgridview.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.doctorgridview.DefaultCellStyle = dataGridViewCellStyle5;
             this.doctorgridview.GridColor = System.Drawing.Color.Silver;
-            this.doctorgridview.Location = new System.Drawing.Point(20, 144);
+            this.doctorgridview.Location = new System.Drawing.Point(20, 146);
             this.doctorgridview.Name = "doctorgridview";
             this.doctorgridview.ReadOnly = true;
             this.doctorgridview.RowHeadersVisible = false;
             this.doctorgridview.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.doctorgridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.doctorgridview.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.doctorgridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.doctorgridview.Size = new System.Drawing.Size(860, 428);
             this.doctorgridview.TabIndex = 3;
             this.doctorgridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // doctorId
-            // 
-            this.doctorId.HeaderText = "ID";
-            this.doctorId.Name = "doctorId";
-            this.doctorId.ReadOnly = true;
-            // 
-            // doctorName
-            // 
-            this.doctorName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.doctorName.HeaderText = "Name";
-            this.doctorName.Name = "doctorName";
-            this.doctorName.ReadOnly = true;
-            // 
-            // doctorAge
-            // 
-            this.doctorAge.HeaderText = "Age";
-            this.doctorAge.Name = "doctorAge";
-            this.doctorAge.ReadOnly = true;
-            // 
-            // specializedArea
-            // 
-            this.specializedArea.HeaderText = "Specialized Area";
-            this.specializedArea.Name = "specializedArea";
-            this.specializedArea.ReadOnly = true;
-            // 
-            // location
-            // 
-            this.location.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.location.HeaderText = "Location";
-            this.location.Name = "location";
-            this.location.ReadOnly = true;
-            // 
-            // phone
-            // 
-            this.phone.HeaderText = "Phone";
-            this.phone.Name = "phone";
-            this.phone.ReadOnly = true;
-            // 
-            // email
-            // 
-            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            // 
-            // qualifications
-            // 
-            this.qualifications.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.qualifications.HeaderText = "Qualifications";
-            this.qualifications.Name = "qualifications";
-            this.qualifications.ReadOnly = true;
             // 
             // panel1
             // 
@@ -223,6 +154,7 @@
             this.Controls.Add(this.btnadddoctor);
             this.Name = "doctors";
             this.Size = new System.Drawing.Size(900, 742);
+            this.Load += new System.EventHandler(this.doctors_Load);
             ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -238,13 +170,5 @@
         private System.Windows.Forms.Label lbladmindashboard;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Button btnsearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn doctorId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn doctorName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn doctorAge;
-        private System.Windows.Forms.DataGridViewTextBoxColumn specializedArea;
-        private System.Windows.Forms.DataGridViewTextBoxColumn location;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn qualifications;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using HealthCare_Plus.Services;
 using HealthCare_Plus.views.admin;
 using MySql.Data.MySqlClient;
+using QRCoder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace HealthCare_Plus.views.staff
 {
@@ -159,12 +161,9 @@ namespace HealthCare_Plus.views.staff
                         {
                             MessageBox.Show("Appointment data added successfully.", "Success");
 
-                            // Load back to the main form (adjust form name accordingly)
-                            appoinments appoinments = new appoinments();
-                            if (ParentForm is staffDashboard staffDashboard)
-                            {
-                                staffDashboard.loadform(appoinments);
-                            }
+                            // Generate QR Code
+                            GenerateQRCode(patientName, description, appointmentDate, appointmentTime, cost);
+
                         }
                         else
                         {
@@ -174,6 +173,26 @@ namespace HealthCare_Plus.views.staff
                 }
             }
 
+        }
+        private void GenerateQRCode(string patientName, string description, string date, string time, string cost)
+        {
+            // Prepare the QR code content
+            string qrContent = $"Appointment,\n Patient Name: {patientName}\nDate: {date}\nTime: {time}\nCost: {cost}\nDescription: {description}";
+
+            using (var qrGenerator = new QRCodeGenerator())
+            {
+                QRCodeData qrCodeData = qrGenerator.CreateQrCode(qrContent, QRCodeGenerator.ECCLevel.Q);
+                using (var qrCode = new QRCode(qrCodeData))
+                {
+                    // Generate QR code image
+                    Bitmap qrCodeImage = qrCode.GetGraphic(20);
+
+                    // Pass the image to the new form
+                    qrcode2 qrForm = new qrcode2(qrCodeImage);
+                    qrForm.Show();
+                    this.Hide();
+                }
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

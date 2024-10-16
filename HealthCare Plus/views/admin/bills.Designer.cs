@@ -168,6 +168,7 @@
             this.Action.HeaderText = "Action";
             this.Action.Name = "Action";
             this.Action.ReadOnly = true;
+            this.Action.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Action.Text = "Pay";
             // 
             // btncreatebill

@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HealthCare_Plus.Services;
+using HealthCare_Plus.views;
 using MySql.Data.MySqlClient;
+using QRCoder;
 
 namespace HealthCare_Plus
 {
@@ -79,11 +81,26 @@ namespace HealthCare_Plus
 
                                 staffInsertCommand.ExecuteNonQuery();
                             }
+                            // Generate QR Code
+                            Bitmap qrCodeImage;
+                            using (var qrGenerator = new QRCodeGenerator())
+                            {
+                                string qrContent = $"Name:{txtname.Text.Trim()}, Username:{usernameInput}, Password:{txtpassword.Text.Trim()}, Phone:{txtphone.Text.Trim()}, Role: Admin"; // Assuming 2 is the role for staff
+                                QRCodeData qrCodeData = qrGenerator.CreateQrCode(qrContent, QRCodeGenerator.ECCLevel.Q);
 
-                            MessageBox.Show("Registration was sucessful. Now you can login", "Success");
+                                using (var qrCode = new QRCode(qrCodeData))
+                                {
+                                    qrCodeImage = qrCode.GetGraphic(20);
+                                }
+                            }
+
+                            // Show QR code in qrcode1 form
+                            qrcode1 qrForm = new qrcode1(qrCodeImage);
+                            qrForm.Show();
+
+                            MessageBox.Show("Registration was successful. Now you can login", "Success");
                             this.Hide();
-                            login login = new login();
-                            login.Show();
+
                         }
                         else
                         {

@@ -1,4 +1,5 @@
 ﻿using HealthCare_Plus.Services;
+using HealthCare_Plus.views;
 using MySql.Data.MySqlClient;
 using OfficeOpenXml.ConditionalFormatting;
 using System;
@@ -12,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using QRCoder;
 
 namespace HealthCare_Plus
 {
@@ -47,12 +49,10 @@ namespace HealthCare_Plus
 
         private void btnregister_Click(object sender, EventArgs e)
         {
-            // register validations
             using (MySqlConnection connection = dbManager.GetConnection())
             {
                 dbManager.OpenConnection(connection);
 
-                // Assuming RegisterValidations.IsValidRegistration function is implemented and works as expected
                 if (RegisterValidations.IsValidRegistration(
                     txtname.Text.Trim(),
                     txtaddress.Text.Trim(),
@@ -70,7 +70,7 @@ namespace HealthCare_Plus
                         insertCommand.Parameters.AddWithValue("@Email", txtemail.Text.Trim());
                         insertCommand.Parameters.AddWithValue("@Username", usernameInput);
                         insertCommand.Parameters.AddWithValue("@Password", passwordInput);
-                        insertCommand.Parameters.AddWithValue("@Role", 2); // Hardcoded role
+                        insertCommand.Parameters.AddWithValue("@Role", 2);
 
                         int rowsAffected = insertCommand.ExecuteNonQuery();
                         if (rowsAffected > 0)
@@ -89,18 +89,32 @@ namespace HealthCare_Plus
                                 staffInsertCommand.ExecuteNonQuery();
                             }
 
-                            MessageBox.Show("Registration was sucessful. Now you can login", "Success");
+                            // Generate QR Code
+                            Bitmap qrCodeImage;
+                            using (var qrGenerator = new QRCodeGenerator())
+                            {
+                                string qrContent = $"Name:{txtname.Text.Trim()},\n Username:{usernameInput}, \n Password:{txtpassword.Text.Trim()},\n Phone:{txtphone.Text.Trim()},\n Role: Staff"; // Assuming 2 is the role for staff
+                                QRCodeData qrCodeData = qrGenerator.CreateQrCode(qrContent, QRCodeGenerator.ECCLevel.Q);
+
+                                using (var qrCode = new QRCode(qrCodeData))
+                                {
+                                    qrCodeImage = qrCode.GetGraphic(20);
+                                }
+                            }
+
+                            // Show QR code in qrcode1 form
+                            qrcode1 qrForm = new qrcode1(qrCodeImage);
+                            qrForm.Show();
+
+                            MessageBox.Show("Registration was successful. Now you can login", "Success");
                             this.Hide();
-                            login login = new login();
-                            login.Show();
                         }
                         else
                         {
-                            MessageBox.Show("Something went wrong. please check and register again", "Error");
+                            MessageBox.Show("Something went wrong. Please check and register again", "Error");
                         }
                     }
                 }
-               
             }
         }
 

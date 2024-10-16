@@ -111,5 +111,10 @@ namespace HealthCare_Plus.views.staff
                 MessageBox.Show("Please select a doctor and a date.", "Error");
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -96,12 +96,17 @@ namespace HealthCare_Plus.views.admin
                             decimal amount = Convert.ToDecimal(reader["amount"]);
                             int paymentStatus = Convert.ToInt32(reader["payment_status"]);
                             string status = "Pay";
+                           
 
                             // Map payment status to "Paid" or "Unpaid"
                             string paymentStatusText = paymentStatus == 0 ? "Unpaid" : "Paid";
 
                             // Add the patient data to the patientgridview
                             patientgridview.Rows.Add(id, patientName, formattedDate, description, amount, paymentStatusText, status);
+                        }
+                        foreach (DataGridViewRow row in patientgridview.Rows)
+                        {
+                            row.Height = 40; // Set your desired height here for each row
                         }
                     }
                 }

@@ -68,7 +68,7 @@
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(304, 33);
             this.date.TabIndex = 24;
-            this.date.Value = new System.DateTime(2024, 9, 16, 0, 0, 0, 0);
+            this.date.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // rtextdescription
             // 

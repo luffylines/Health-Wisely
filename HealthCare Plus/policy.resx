@@ -154,7 +154,7 @@
   <data name="picboxlogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACdISURBVHhe7d15
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACdISURBVHhe7d15
         vF1lfajxEwIEZBSQURCCzArKjJfWCUHKWARkEAQVuFItWlvFagHFAYdeRei1tIoICEKrVlBBQEQElVkm
         macgk0whJAwJyb3PLxA4SX5JztnTWutdz/P5fP95c3LOXvvstfc6e6/1vkNmHbYKtsCOeB+OwOfxbzgL
         F+NqXI+7XvIQnnjJdPw/STP3hVn7Rewjs/aX2HdiH/oVfojYt2Ifi30t9rl3Y3PEvmhm1rOWxpZ4Lz6F
@@ -1509,5 +1509,24 @@
         RRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
         RRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 </value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Response Time:
+
+-Doctors will respond to patient inquiries within 24 to 48 hours.
+-Patients are encouraged to be patient and allow adequate time for responses.
+Respect and Professionalism:
+
+All communications must be conducted respectfully and professionally.
+-Inappropriate language or behavior will not be tolerated.
+
+Privacy and Confidentiality:
+
+-Both parties must ensure that sensitive information is kept confidential.
+-Discussions involving personal health information should only occur within the secure platform.
+
+Appointment Management:
+
+-Patients are encouraged to schedule appointments through the HealthWisely system for timely consultations.</value>
   </data>
 </root>

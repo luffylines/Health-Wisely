@@ -72,9 +72,9 @@
             this.date.MaxDate = new System.DateTime(2025, 8, 20, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(288, 33);
+            this.date.Size = new System.Drawing.Size(313, 33);
             this.date.TabIndex = 28;
-            this.date.Value = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
+            this.date.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // combodoctor
             // 
@@ -84,7 +84,7 @@
             this.combodoctor.FormattingEnabled = true;
             this.combodoctor.Location = new System.Drawing.Point(143, 43);
             this.combodoctor.Name = "combodoctor";
-            this.combodoctor.Size = new System.Drawing.Size(287, 34);
+            this.combodoctor.Size = new System.Drawing.Size(312, 34);
             this.combodoctor.TabIndex = 29;
             // 
             // panel2

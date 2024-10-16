@@ -43,8 +43,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panelsidebar = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.lblstaffdashboard = new System.Windows.Forms.Label();
+            this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -230,27 +230,27 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // picboxlogo
-            // 
-            this.picboxlogo.Image = ((System.Drawing.Image)(resources.GetObject("picboxlogo.Image")));
-            this.picboxlogo.Location = new System.Drawing.Point(576, 119);
-            this.picboxlogo.Name = "picboxlogo";
-            this.picboxlogo.Size = new System.Drawing.Size(220, 156);
-            this.picboxlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picboxlogo.TabIndex = 35;
-            this.picboxlogo.TabStop = false;
-            // 
             // lblstaffdashboard
             // 
             this.lblstaffdashboard.AutoSize = true;
             this.lblstaffdashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblstaffdashboard.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblstaffdashboard.ForeColor = System.Drawing.Color.White;
-            this.lblstaffdashboard.Location = new System.Drawing.Point(38, 29);
+            this.lblstaffdashboard.Location = new System.Drawing.Point(38, 67);
             this.lblstaffdashboard.Name = "lblstaffdashboard";
             this.lblstaffdashboard.Size = new System.Drawing.Size(150, 36);
             this.lblstaffdashboard.TabIndex = 31;
             this.lblstaffdashboard.Text = "ABOUT US";
+            // 
+            // picboxlogo
+            // 
+            this.picboxlogo.Image = ((System.Drawing.Image)(resources.GetObject("picboxlogo.Image")));
+            this.picboxlogo.Location = new System.Drawing.Point(565, 119);
+            this.picboxlogo.Name = "picboxlogo";
+            this.picboxlogo.Size = new System.Drawing.Size(231, 156);
+            this.picboxlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxlogo.TabIndex = 35;
+            this.picboxlogo.TabStop = false;
             // 
             // label2
             // 

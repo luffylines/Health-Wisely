@@ -96,7 +96,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.OldLace;
+            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel2.Controls.Add(this.todate);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.fromdate);
@@ -116,7 +116,7 @@
             this.todate.Name = "todate";
             this.todate.Size = new System.Drawing.Size(330, 33);
             this.todate.TabIndex = 41;
-            this.todate.Value = new System.DateTime(2024, 9, 16, 0, 0, 0, 0);
+            this.todate.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // label1
             // 

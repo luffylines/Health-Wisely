@@ -110,5 +110,15 @@ namespace HealthCare_Plus.views.staff
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void paneltop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelcontent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

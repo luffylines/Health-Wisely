@@ -44,10 +44,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.progressBar1);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(129, 77);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 448);
@@ -56,10 +56,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(273, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(255, 47);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(236, 163);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(250, 278);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -87,8 +87,9 @@
             // progressBar1
             // 
             this.progressBar1.AccessibleName = "10";
-            this.progressBar1.BackColor = System.Drawing.Color.PaleGreen;
-            this.progressBar1.Location = new System.Drawing.Point(108, 299);
+            this.progressBar1.BackColor = System.Drawing.Color.Red;
+            this.progressBar1.ForeColor = System.Drawing.Color.Orange;
+            this.progressBar1.Location = new System.Drawing.Point(108, 309);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(567, 44);
             this.progressBar1.TabIndex = 0;
@@ -103,8 +104,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1037, 590);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Name = "progress";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

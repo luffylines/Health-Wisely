@@ -88,6 +88,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.app.DefaultCellStyle = dataGridViewCellStyle2;
+            this.app.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.app.GridColor = System.Drawing.Color.Silver;
             this.app.Location = new System.Drawing.Point(43, 205);
             this.app.Name = "app";

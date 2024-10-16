@@ -224,7 +224,7 @@
             this.time.MinDate = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
             this.time.Name = "time";
             this.time.ShowUpDown = true;
-            this.time.Size = new System.Drawing.Size(288, 33);
+            this.time.Size = new System.Drawing.Size(305, 33);
             this.time.TabIndex = 28;
             this.time.Value = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
             // 
@@ -261,7 +261,7 @@
             this.combopatient.FormattingEnabled = true;
             this.combopatient.Location = new System.Drawing.Point(22, 46);
             this.combopatient.Name = "combopatient";
-            this.combopatient.Size = new System.Drawing.Size(288, 34);
+            this.combopatient.Size = new System.Drawing.Size(305, 34);
             this.combopatient.TabIndex = 25;
             // 
             // date
@@ -271,9 +271,9 @@
             this.date.MaxDate = new System.DateTime(2025, 8, 20, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(2021, 12, 2, 0, 0, 0, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(288, 33);
+            this.date.Size = new System.Drawing.Size(305, 33);
             this.date.TabIndex = 24;
-            this.date.Value = new System.DateTime(2024, 9, 26, 0, 0, 0, 0);
+            this.date.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // add_appoinment
             // 

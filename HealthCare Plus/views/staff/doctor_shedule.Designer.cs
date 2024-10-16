@@ -48,7 +48,7 @@
             this.combodoctor.FormattingEnabled = true;
             this.combodoctor.Location = new System.Drawing.Point(153, 34);
             this.combodoctor.Name = "combodoctor";
-            this.combodoctor.Size = new System.Drawing.Size(287, 34);
+            this.combodoctor.Size = new System.Drawing.Size(316, 34);
             this.combodoctor.TabIndex = 29;
             // 
             // date
@@ -58,9 +58,9 @@
             this.date.MaxDate = new System.DateTime(2025, 8, 20, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(288, 33);
+            this.date.Size = new System.Drawing.Size(316, 33);
             this.date.TabIndex = 28;
-            this.date.Value = new System.DateTime(2024, 9, 16, 0, 0, 0, 0);
+            this.date.Value = new System.DateTime(2024, 10, 18, 0, 0, 0, 0);
             // 
             // btnavailability
             // 
@@ -100,6 +100,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(586, 359);
             this.panel2.TabIndex = 32;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 

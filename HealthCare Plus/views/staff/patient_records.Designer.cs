@@ -88,7 +88,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.patientrecordsgrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.patientrecordsgrid.GridColor = System.Drawing.Color.Silver;
-            this.patientrecordsgrid.Location = new System.Drawing.Point(16, 142);
+            this.patientrecordsgrid.Location = new System.Drawing.Point(16, 125);
             this.patientrecordsgrid.Name = "patientrecordsgrid";
             this.patientrecordsgrid.ReadOnly = true;
             this.patientrecordsgrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;

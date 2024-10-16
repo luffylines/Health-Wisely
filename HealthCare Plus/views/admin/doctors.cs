@@ -1,4 +1,5 @@
-﻿using HealthCare_Plus.Controllers;
+﻿using Google.Protobuf.WellKnownTypes;
+using HealthCare_Plus.Controllers;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -66,13 +67,17 @@ namespace HealthCare_Plus.views.admin
                     string qualifications = reader["qualifications"].ToString();
                             doctorgridview.Rows.Add(doctorId, doctorName, doctorAge, specializedArea, location, phone, email, qualifications, "Edit");
                         }
+                        foreach (DataGridViewRow row in doctorgridview.Rows)
+                        {
+                            row.Height = 30; // Set your desired height here for each row
+                        }
                     }
                 }
             }
         }
         private void doctor_Load(object sender, EventArgs e)
         {
-            LoadDoctorData();
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -83,7 +88,7 @@ namespace HealthCare_Plus.views.admin
                 DataGridViewRow selectedRow = doctorgridview.Rows[e.RowIndex];
 
                 // Extract data from the selected row
-                int doctorId = Convert.ToInt32(selectedRow.Cells["doctorId"].Value);
+                int doctorId = Convert.ToInt32(selectedRow.Cells["id"].Value);
                 string doctorName = selectedRow.Cells["doctorName"].Value.ToString();
                 string doctorAge = selectedRow.Cells["doctorAge"].Value.ToString();
                 string specializedArea = selectedRow.Cells["specialized_area"].Value.ToString();
@@ -118,6 +123,27 @@ namespace HealthCare_Plus.views.admin
         {
             string search = txtsearch.Text.Trim().ToLower();
             LoadDoctorData(search);
+        }
+
+        private void doctors_Load(object sender, EventArgs e)
+        {
+            // Set up DataGridView columns for doctorgridview
+            doctorgridview.Columns.Clear(); // Clear existing columns if necessary
+
+            doctorgridview.Columns.Add("id", "Doctor ID");
+            doctorgridview.Columns.Add("doctorName", "Name");
+            doctorgridview.Columns.Add("doctorAge", "Age");
+            doctorgridview.Columns.Add("specialized_area", "Specialized Area");
+            doctorgridview.Columns.Add("location", "Location");
+            doctorgridview.Columns.Add("phone", "Phone");
+            doctorgridview.Columns.Add("email", "Email");
+            doctorgridview.Columns.Add("qualifications", "Qualifications");
+
+
+            // Set AutoSizeMode for columns
+            doctorgridview.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Reset before applying
+
+            LoadDoctorData();
         }
     }
 }

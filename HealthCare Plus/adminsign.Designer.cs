@@ -113,7 +113,7 @@
             // 
             this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtemail.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Location = new System.Drawing.Point(22, 148);
+            this.txtemail.Location = new System.Drawing.Point(22, 138);
             this.txtemail.Multiline = false;
             this.txtemail.Name = "txtemail";
             this.txtemail.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
@@ -185,9 +185,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label6.Location = new System.Drawing.Point(18, 217);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 24);
+            this.label6.Size = new System.Drawing.Size(97, 24);
             this.label6.TabIndex = 13;
-            this.label6.Text = "User Name";
+            this.label6.Text = "Username";
             // 
             // label5
             // 
@@ -203,7 +203,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label4.Location = new System.Drawing.Point(18, 120);
+            this.label4.Location = new System.Drawing.Point(18, 111);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 24);
             this.label4.TabIndex = 11;

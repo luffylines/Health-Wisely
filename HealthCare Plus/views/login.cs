@@ -6,7 +6,10 @@ using System.Text;
 using HealthCare_Plus.views.admin;
 using HealthCare_Plus.views.staff;
 using HealthCare_Plus.Services;
-
+using AForge.Video;
+using AForge.Video.DirectShow;
+using System.Drawing;
+using ZXing;
 namespace HealthCare_Plus
 {
     public partial class login : Form
@@ -27,18 +30,33 @@ namespace HealthCare_Plus
 
         private void exit_Click(object sender, EventArgs e)
         {
+           
             Application.Exit();
         }
 
         private void login_Load(object sender, EventArgs e)
         {
 
-            
-            
         }
+
+        private void StartCamera()
+        {
+           
+        }
+
+        private void login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+              
+           
+        }
+
+      
+
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
+           
 
             if (LoginValidations.IsValidLogin(txtusername.Text.Trim(), txtpassword.Text.Trim()))
             {
@@ -93,6 +111,7 @@ namespace HealthCare_Plus
 
         private void register_Click(object sender, EventArgs e)
         {
+           
             staffRegistration staffRegistration = new staffRegistration();
             staffRegistration.Show();
 
@@ -146,10 +165,14 @@ namespace HealthCare_Plus
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
             Main mayn = new Main();
             mayn.Show();
 
             this.Hide();
         }
-    }
+
+
+    
+    } 
 }
